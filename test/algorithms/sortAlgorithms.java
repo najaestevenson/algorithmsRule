@@ -29,7 +29,12 @@ public void setUp(){
 	}
 	@Test
 	public void anotherBubbleSortTest(){
-		
+	array = new int[]{9,5,8,6,3,7,2,1};
+	bs.unsortedArray(array);//printing unsorted array
+	int[] actual= bs.bubbleSort(array);// calling bubble sort on array 
+	int[] expect = {1,2,3,5,6,7,8,9};
+	bs.printSortedArray(array);
+	assertArrayEquals(expect, actual);
 	}
 
 }
