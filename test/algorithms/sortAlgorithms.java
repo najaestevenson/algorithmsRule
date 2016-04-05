@@ -2,12 +2,20 @@ package algorithms;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import algorithms.BubbleSort;
 
 public class sortAlgorithms {
+BubbleSort bs;
+int [] array;
 
+@Before
+public void setUp(){
+	bs = new BubbleSort();
+	
+}
 	@Test
 	public void bubbleSorttest() {
 		//Using J-unit I can do test driven development. 
