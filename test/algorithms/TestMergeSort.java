@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestMergeSort {
-	MergeSort ms;//Class doesn't exist
+	MergeSort ms;
 	int[] array;
 @Before
 public void setup(){
@@ -14,10 +14,10 @@ public void setup(){
 	
 }
 	@Test
-	public void MergeSortTest() {//Test driven design first. No actual code
+	public void MergeSortTest() {
 		array = new int[]{37,49,2,74,6,83,0,9,4,9,87,8,28};
 		System.out.println(array);
-		int[] actual = ms.sort(array);//Method doesn't exist
+		int[] actual = ms.printsortedArray(array);
 		int[] expected ={0,2,4,6,8,9,9,28,37,49,74,83,87};
 		assertArrayEquals(expected, actual);
 		System.out.println(array);
