@@ -6,11 +6,12 @@ private int[] array;
 private int[] tempMergArr;
 private int length;
 
-public void sort(int[] inputArr){
+public int[] sort(int[] inputArr){
 	this.array=inputArr;
 	this.length=inputArr.length;
 	this.tempMergArr= new int[length];
 	doMergeSort(0,length -1);
+	return inputArr;
 	}
 private void doMergeSort(int lowerIndex, int higherIndex){
 	if(lowerIndex<higherIndex){
@@ -44,12 +45,12 @@ private void mergeParts(int lowerIndex,int middle, int higherIndex ){
 		i++;
 	}
 }
-public int[] printsortedArray(int[] array) {
+public void printsortedArray(int[] array) {
 	this.sort(array);
 	for (int i : array) {
 		System.out.print(i);
 		System.out.print(",");
 		
-	}return array;
+	}
 	}
 }

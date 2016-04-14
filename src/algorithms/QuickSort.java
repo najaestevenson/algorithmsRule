@@ -58,7 +58,7 @@ class QuickSort {
 
 	public void printsortedArray(int[] array) {
 		this.sort(array);
-		System.out.println("After quickSort");
+		System.out.print("After quickSort");
 		for (int i : array) {
 			System.out.print( i+" ");
 			
