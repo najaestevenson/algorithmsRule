@@ -6,8 +6,9 @@ class QuickSort {
 	private int length;
 
 	public void printUnsortedArray(int[] array) {
+		System.out.println("Array before Quick Sort");
 		for (int i = 0; i < array.length; i++) {
-			System.out.println("Array before Quick Sort" + array[i] + "");
+			System.out.print(array[i] + " ");
 		}
 
 	}
@@ -57,8 +58,9 @@ class QuickSort {
 
 	public void printsortedArray(int[] array) {
 		this.sort(array);
+		System.out.println("After quickSort");
 		for (int i : array) {
-			System.out.print( "After QuickSort "+i+",");
+			System.out.print( i+" ");
 			
 			
 		}

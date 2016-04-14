@@ -5,7 +5,7 @@ class BubbleSort {
 	public void unsortedArray(int[] a) {
 		System.out.println("Array before bubble sort");
 		for (int i = 0; i < a.length; i++) {
-			System.out.println( a[i] + " ");
+			System.out.print( a[i] + " ");
 		}
 	}
 
