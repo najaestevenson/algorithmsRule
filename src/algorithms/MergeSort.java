@@ -48,8 +48,8 @@ private void mergeParts(int lowerIndex,int middle, int higherIndex ){
 public void printsortedArray(int[] array) {
 	this.sort(array);
 	for (int i : array) {
-		System.out.print(i);
-		System.out.print(",");
+		System.out.print(i+" ");
+		
 		
 	}
 	}
