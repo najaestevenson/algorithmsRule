@@ -43,8 +43,9 @@ public void setUp(){
 	public void quickSortTest(){
 		array = new int[]{29,45,77,84,1,93,25,82};
 		qs.printUnsortedArray(array);
-		int[] actual = qs.printsortedArray(array);
+		int[] actual = qs.sort(array);
 		int [] expected = {1,25,29,45,77,82,84,93};
+		qs.printsortedArray(array);
 		
 		assertArrayEquals(expected, actual);
 	}

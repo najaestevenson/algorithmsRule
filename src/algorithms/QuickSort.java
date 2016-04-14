@@ -12,13 +12,14 @@ class QuickSort {
 
 	}
 
-	public void sort(int[] inputArr) {
+	public int[] sort(int[] inputArr) {
 		if (inputArr == null || inputArr.length == 0) {
-			return;
+			return null;
 		}
 		this.arr = inputArr;
 		length = inputArr.length;
 		quickSort(0, length - 1);
+		return inputArr;
 		
 	}
 
@@ -54,13 +55,13 @@ class QuickSort {
 		arr[j] = temp;
 	}
 
-	public int[] printsortedArray(int[] array) {
+	public void printsortedArray(int[] array) {
 		this.sort(array);
 		for (int i : array) {
-			System.out.print(i);
-			System.out.print(",");
+			System.out.print( "After QuickSort "+i+",");
 			
-		}return array;
+			
+		}
 		}
 }
 	
